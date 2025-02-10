@@ -31,9 +31,6 @@ jobs:
             docker stop fastapi-app || true
             docker rm fastapi-app || true
             
-            # Remove old image
-            docker rmi fastapi-app || true
-            
             # Pull the latest code and rebuild
             cd /home/$SERVER_USER/app
             git pull origin main
