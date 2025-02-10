@@ -32,7 +32,7 @@ jobs:
             docker rm fastapi-app || true
             
             # Pull the latest code and rebuild
-            cd /home/$SERVER_USER/app
+            cd /home/$SERVER_USER/hng-task
             git pull origin main
             docker build -t fastapi-app .
             
